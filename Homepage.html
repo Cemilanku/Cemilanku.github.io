@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cemilanku</title>
+    <link rel="shortcut icon" href="https://cemilanku.github.io/logo-web.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=ege">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script class="sapa">
+      //alert("Selamat Datang")
+	</script>
+	<style type="text/css" class="main">
+		 	*{
+     		margin:0;
+      		padding:0;
+      		  }
+			body {
+			  background-image: linear-gradient(120deg,#3498db,#8e44ad);
+				height: 100vh;
+				background-repeat: no-repeat;
+				height: 100vh;
+				background-size: cover;
+				background-position: center;
+				font-family: Gill Sans MT;
+			    }
+			nav {
+				background-color: #ffffff;
+				}
+			nav ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				}
+			nav > ul > li {
+				float: left;
+			  }
+			nav li a {
+				display: inline-block;
+				color: black;
+				font-family: fantasy;
+				text-align: center;
+				height: 35px;
+				padding: 14px 16px;
+				text-decoration: none;
+				transition: 0.25s;
+				}
+			nav li a:hover{
+				background-color: rgb(194, 194, 194);
+				}
+		  	.nav-brand{
+				height:35px;
+				width: 35px;
+				}
+			.produk{
+				background-color: rgba(255, 255, 255, 0.178);
+				height: auto;
+				width: auto;
+			}
+			.card-p{
+				height: 160px;
+				width: 115px;
+				float: left;
+				margin-left: 45px;
+				margin-top: 20px;
+				background-color: #fff;
+				border-radius: 5%;
+			}
+			.card-p a{
+				text-decoration:none
+			}
+			.card-p a p{
+				font-family: fantasy;
+				color: #000;
+				text-align: center;
+				font-size: 20px;
+			}
+			.c-p{
+				height: 105px;
+				width: 115px;
+				text-align: center;
+				border-radius: 5%;
+			}
+	</style>
+	<style>
+			.slide {
+				height: 200px;
+				width: 300px;
+				display: block; 
+				margin: auto;
+				transition: 0.5s ease;
+			}
+	</style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+		<li><a href=""><img class="nav-brand" src="https://cemilanku.github.io/logo-web.png"></a></li>
+		<li><a href=""><h1>Author</h1></a></li>
+		<li><a href=""><h1>About</h1></a></li>
+      </ul>
+	</nav>
+	<div class="slide-content">
+			<a href=""><img class="slide" src="https://cemilanku.github.io/Images/Pastel.jpg" alt="Pastel"></a>
+			<a href=""><img class="slide" src="https://cemilanku.github.io/Images/Risoles.jpg" alt="Risoles"></a>
+			<a href=""><img class="slide" src="https://cemilanku.github.io/Images/Dadar-Gulung.jpg" alt="Dadar Gulung"></a>
+			<a href=""><img class="slide" src="https://cemilanku.github.io/Images/Kue-Lumpur.jpg" alt="Kue Lumpur"></a>
+			<a href=""><img class="slide" src="https://cemilanku.github.io/Images/Onde-Onde.jpg" alt="Onde-Onde"></a>
+			<a href=""><img class="slide" src="https://cemilanku.github.io/Images/Lontong-Isi.jpg" alt="Lontong-Isi"></a>			
+		</div>
+	<div class="produk">
+		<div class="card-p"><a href=""><img class="c-p" src="https://cemilanku.github.io/Images/Pastel.jpg" alt="Pastel"><div class="d-p"><p>Pastel</p></div></a></div>
+		<div class="card-p"><a href=""><img class="c-p" src="https://cemilanku.github.io/Images/Risoles.jpg" alt="Risoles"><div class="d-p"><p>Risoles</p></div></a></div>
+		<div class="card-p"><a href=""><img class="c-p" src="https://cemilanku.github.io/Images/Dadar-Gulung.jpg" alt="Dadar Gulung"><div class="d-p"><p>Dadar Gulung</p></div></a></div>
+		<div class="card-p"><a href=""><img class="c-p" src="https://cemilanku.github.io/Images/Kue-Lumpur.jpg" alt="Kue Lumpur"><div class="d-p"><p>Kue Lumpur</p></div></a></div>
+		<div class="card-p"><a href=""><img class="c-p" src="https://cemilanku.github.io/Images/Onde-Onde.jpg" alt="Onde-Onde"><div class="d-p"><p>Onde-Onde</p></div></a></div>
+		<div class="card-p"><a href=""><img class="c-p" src="https://cemilanku.github.io/Images/Lontong-Isi.jpg" alt="Lontong-Isi"><div class="d-p"><p>Lontong Isi</p></div></a></div>
+	</div>
+	<script>
+		var myIndex = 0;
+			carousel();
+ 
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("slide");
+			for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+	}
+ 
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}    
+		x[myIndex-1].style.display = "block";  
+		setTimeout(carousel, 3000); //Ubah gambar setiap 3 detik
+		}
+	</script>
+  </body>
+</html>
